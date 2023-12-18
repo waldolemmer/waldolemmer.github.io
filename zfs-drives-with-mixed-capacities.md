@@ -5,7 +5,8 @@ description: >
 
 # ZFS: Drives with mixed capacities
 
-The following output of `zpool iostat mypool` shows how data is striped across single drive vdevs of different sizes:
+The following output of `zpool iostat mypool` shows how data is striped across
+single drive vdevs of different sizes:
 
 ```
               capacity     operations     bandwidth 
@@ -27,9 +28,11 @@ The usages (%) are as follows:
 |---|---|---|---|---|---
 |3.9|3.8|3.4|60 |78 |4.0
 
-Notice that the 750G, 1T and 2T hard drives about equally full while the 8G
-flash drives are almost full. In general, larger drives have proportionally
-more data striped across them, except for very low-latency drives (flash drives
-and SSDs), which get filled first. You should therefore ensure that your
-largest disks are the fastest, since they will store the most data and will
-therefore have the largest impact on the overall throughput.
+Notice that the 750G, 1T and 2T hard drives are all around 4% while the 8G
+flash drives are almost full.
+
+In general, larger drives have proportionally more data striped across them,
+except for very low-latency drives (flash drives and SSDs), which get filled
+first. You should therefore ensure that your largest disks are the fastest,
+since they will store the most data and will therefore have the largest impact
+on the overall throughput.
