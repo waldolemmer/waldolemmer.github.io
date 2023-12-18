@@ -11,8 +11,8 @@ some features. Some of these may not be supported by the hardware, but others
 may work fine.
 
 The features are hidden using the HTML `hidden` attribute. To turn this
-attribute off for all elements on a page, open your browser's dev tools and
-type `$('#*').show()` into the console.
+attribute off for all elements on a page, open your browser's dev tools (F12),
+switch to the console tab, enter `$('#*').show()` and press Enter.
 
 On my B315, this allows me to change the DNS server addresses sent via DHCP:
 
