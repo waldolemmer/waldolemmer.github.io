@@ -1,5 +1,8 @@
 ---
 title: "Waldo Lemmer"
+description: >
+    I share various findings and solutions to errors that I've come
+    across. I mainly cover Windows, Linux, ZFS and networking.
 ---
 
 ## Windows

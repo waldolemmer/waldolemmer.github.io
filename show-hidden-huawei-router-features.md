@@ -1,3 +1,9 @@
+---
+description: >
+    Using your browser to reveal hidden settings such as DHCP DNS server
+    addresses and LTE bands.
+---
+
 # Show hidden Huawei router features
 
 Huawei reuses the same interface for many of their routers, but chooses to hide

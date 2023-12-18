@@ -1,3 +1,12 @@
+---
+description:  |
+    Solution for:
+    Error: creating UInputDevice from /dev/input/event
+    Caused by:
+        ENOENT: No such file or directory"
+
+---
+
 # Error: creating UInputDevice from /dev/input/event caused by ENOENT
 
 You might be facing the following error:

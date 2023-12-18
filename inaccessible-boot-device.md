@@ -1,3 +1,9 @@
+---
+description: >
+    How to fix the INACCESSIBLE_BOOT_DEVICE blue screen of death (BSOD) when
+    trying to boot off a Windows USB.
+---
+
 # INACCESSIBLE_BOOT_DEVICE in Windows when booting from USB
 
 1. Press Win+R.

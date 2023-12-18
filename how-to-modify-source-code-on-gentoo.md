@@ -1,3 +1,8 @@
+---
+description: >
+    Changing the source code of a Gentoo package – the right way.
+---
+
 # How to modify source code on Gentoo
 
 The cool thing about Gentoo is that you can modify a package's source code as

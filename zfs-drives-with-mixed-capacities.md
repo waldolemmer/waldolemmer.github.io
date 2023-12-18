@@ -1,3 +1,8 @@
+---
+description: >
+    How data, reads and writes are distributed across drives with mixed sizes.
+---
+
 # ZFS: Drives with mixed capacities
 
 The following output of `zpool iostat mypool` shows how data is striped across single drive vdevs of different sizes:
