@@ -14,6 +14,7 @@ description: >
 - [Error: creating UInputDevice from /dev/input/event caused by ENOENT](error-creating-uinputdevice.md)
 - [How to modify source code on Gentoo](how-to-modify-source-code-on-gentoo.md)
 - [RTL8192EU: driver with monitor mode and packet injection support](rtl8192eu-driver.md)
+- [Editing the `emerge --resume` database (with a text editor)](gentoo-delete-last-entry-from-resume-list.md)
 
 ## Other articles
 
