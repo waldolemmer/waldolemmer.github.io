@@ -26,7 +26,7 @@ CFLAGS](emerge-script-output.png)
       - `emerge`, along with a few build tools, from this environment will be
         used to build packages.
       - If a Gentoo installation is not available, [set up a Gentoo chroot
-        environment](chroot-any-os). Multilib and desktop support are not
+        environment](../chroot-any-os). Multilib and desktop support are not
         needed, the init system does not matter and musl is fine.
 - A target device
 
