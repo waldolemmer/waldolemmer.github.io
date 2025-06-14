@@ -4,6 +4,8 @@ description: >
     addresses and LTE bands.
 ---
 
+import IdealImage from '@theme/IdealImage';
+
 # Show hidden Huawei router features
 
 Huawei reuses the same interface for many of their routers, but chooses to hide
@@ -16,6 +18,5 @@ switch to the console tab, enter `$('#*').show()` and press Enter.
 
 On my B315, this allows me to change the DNS server addresses sent via DHCP:
 
-![DNS and fallback DNS text fields][image]
-
-[image]: show-hidden-huawei-router-features.png
+<IdealImage img={require('./screenshot.png')}
+        alt='DNS and fallback DNS text fields'/>

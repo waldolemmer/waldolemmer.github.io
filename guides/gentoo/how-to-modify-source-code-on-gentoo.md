@@ -1,4 +1,5 @@
 ---
+sidebar_position: 5
 description: >
     Changing the source code of a Gentoo package – the right way.
 ---
@@ -23,7 +24,7 @@ For this example, I'll modify
    tar xf /var/cache/distfiles/btop-1.1.2.tar.gz -C a
    tar xf /var/cache/distfiles/btop-1.1.2.tar.gz -C b
    ```
-   
+
 3. Modify the sources in b/ as you see fit. Don't touch a/.
 
 ## Generating a patch
