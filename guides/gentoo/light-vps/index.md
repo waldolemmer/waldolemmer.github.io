@@ -3,6 +3,7 @@ sidebar_position: 1
 title: Lightweight VPS installation
 description: Install Gentoo without compiling anything, with custom CFLAGS and USE flags.
 image: fastfetch.png
+keywords: [gentoo vps, gentoo light vps]
 ---
 
 # Installing Gentoo on a Lightweight VPS
