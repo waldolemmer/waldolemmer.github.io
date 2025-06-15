@@ -69,7 +69,12 @@ const config: Config = {title: 'Waldo Lemmer',
                         // want to replace "en" with "zh-Hans".
                         i18n: {defaultLocale: 'en', locales: ['en']},
 
-                        plugins: ['@docusaurus/plugin-ideal-image',
+                        plugins: [['@docusaurus/plugin-ideal-image',
+                                   {quality: 50,
+                                    max: 3840,
+                                    min: 300,
+                                    steps: 12,
+                                    disableInDev: true}],
                                   ['@docusaurus/plugin-content-docs',
                                    {id: 'projects',
                                     sidebarPath: './sidebars/projectSidebars.ts',
