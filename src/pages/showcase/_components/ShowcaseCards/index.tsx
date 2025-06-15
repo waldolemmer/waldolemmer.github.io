@@ -32,18 +32,49 @@ function HeadingNoResult() {
   );
 }
 
-function HeadingProjects() {
+import {useAllDocsData} from '@docusaurus/plugin-content-docs/client';
+import Link from '@docusaurus/Link';
+
+
+function SectionHeading({ docKey, titleId, titleText }) {
+  const allDocs = useAllDocsData();
+  const docsData = allDocs[docKey];
+  const firstDoc = docsData.versions[0].docs[0];
+
   return (
     <Heading as="h2">
-      <Translate id="showcase.favoritesList.title">Projects</Translate>
+      <Link to={firstDoc.path} className={styles.headingLink}>
+        <Translate id={titleId}>{titleText}</Translate>
+        <span style={{ marginLeft: '0.25rem' }}>›</span>
+      </Link>
+    </Heading>
+  );
+}
+
+function HeadingProjects() {
+  const allDocs = useAllDocsData();
+  const projectsData = allDocs.projects;
+  const firstDoc = projectsData.versions[0].docs[0];
+  return (
+    <Heading as="h2">
+      <Link to={firstDoc.path} className={styles.headingLink}>
+        <Translate id="showcase.favoritesList.title">Projects</Translate>
+        <span style={{ marginLeft: '0.25rem' }}>›</span>
+      </Link>
     </Heading>
   );
 }
 
 function HeadingAllSites() {
+  const allDocs = useAllDocsData();
+  const projectsData = allDocs.default;
+  const firstDoc = projectsData.versions[0].docs[0];
   return (
     <Heading as="h2">
-      <Translate id="showcase.projectsList.allProjects">Guides</Translate>
+      <Link to={firstDoc.path} className={styles.headingLink}>
+        <Translate id="showcase.projectsList.allProjects">Guides</Translate>
+        <span style={{ marginLeft: '0.25rem' }}>›</span>
+      </Link>
     </Heading>
   );
 }
@@ -83,10 +114,28 @@ export default function ShowcaseCards() {
       {filteredProjects.length === sortedProjects.length ? (
         <>
           <div className={styles.showcaseFavorite}>
-            <CardList heading={<HeadingProjects />} items={favoriteProjects} />
+            <CardList
+              heading={
+                <SectionHeading
+                  docKey="projects"
+                  titleId="showcase.favoritesList.title"
+                  titleText="Projects"
+                />
+              }
+              items={favoriteProjects}
+            />
           </div>
           <div className="margin-top--lg">
-            <CardList heading={<HeadingAllSites />} items={guides} />
+            <CardList
+              heading={
+                <SectionHeading
+                  docKey="default"
+                  titleId="showcase.projectsList.allProjects"
+                  titleText="Guides"
+                />
+              }
+              items={guides}
+            />
           </div>
         </>
       ) : (
