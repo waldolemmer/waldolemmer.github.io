@@ -25,3 +25,14 @@ html[data-theme='dark'] .showcaseFavorite {
   display: flex;
   align-items: center;
 }
+
+.headingLink {
+  color: inherit;                  /* will be white if your Heading is white */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.headingLink:hover {
+  color: var(--ifm-color-primary); /* Docusaurus primary color on hover */
+}
+
