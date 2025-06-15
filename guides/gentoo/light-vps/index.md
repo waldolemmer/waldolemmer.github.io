@@ -6,6 +6,8 @@ image: fastfetch.png
 keywords: [gentoo vps, gentoo light vps]
 ---
 
+import Image from '@theme/IdealImage';
+
 # Installing Gentoo on a Lightweight VPS
 
 This guide explains how to install Gentoo on a target device:
@@ -18,8 +20,9 @@ A lightweight VPS is a common use case with these requirements.
 Another more powerful device with the same architecture (but potentially a
 different CPU) is required.
 
-![fastfetch output: OS: Gentoo, Host: KVM, Memory: 1 GiB, Disk: 5.91
-GiB](fastfetch.png)
+<Image alt='fastfetch output: OS: Gentoo, Host: KVM, Memory: 1 GiB, Disk: 5.91
+            GiB'
+       img={require('./fastfetch.png')} />
 
 ## Requirements
 
@@ -46,8 +49,8 @@ packages is required.
 By the end, the user should be chrooted in on the target disk and have an
 internet connection.
 
-![ls from / shows layout with stage3, ping a.co shows
-responses](target-post-chroot.png)
+<Image alt='ls from / shows layout with stage3, ping a.co shows responses'
+       img={require('./target-post-chroot.png')} />
 
 ### Binary package repository
 
