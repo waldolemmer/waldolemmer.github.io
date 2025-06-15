@@ -1,6 +1,7 @@
 ---
 description: >
     How data, reads and writes are distributed across drives with mixed sizes.
+image: '/img/zfs-social-card.png'
 ---
 
 # ZFS: Drives with mixed capacities
@@ -9,7 +10,7 @@ The following output of `zpool iostat mypool` shows how data is striped across
 single drive vdevs of different sizes:
 
 ```
-              capacity     operations     bandwidth 
+              capacity     operations     bandwidth
 pool        alloc   free   read  write   read  write
 ----------  -----  -----  -----  -----  -----  -----
 mypool       171G  4.15T     37     90  5.03M  13.2M
