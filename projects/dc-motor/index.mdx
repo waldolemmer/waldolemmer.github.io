@@ -3,15 +3,20 @@ title: DC motor
 description: My Lortenz force-based DC motor for EIR 221 at the University of
              Pretoria.
 ---
+
+import Image from '@theme/IdealImage'
+
 # Lorentz force DC motor
 
-![The motor has two yellow 3D-printed magnet holders. Magnet wire is wound
-around a 3D-printed rotor. The axle is a wooden dowel stick, and his held up by
-two 3D-printed holders, one of which is black instead of yellow. The holders
-are screwed into a poorly cut piece of hardboard, with some text on it written
-in markers (used during the assessment). Paperclips are used as brushes and are
-screwed in and their angles are retained using masking tape. There is also
-masking tape wrapped around the axle at two points.](dc-motor-2.jpg)
+<Image alt='The motor has two yellow 3D-printed magnet holders. Magnet wire is
+            wound around a 3D-printed rotor. The axle is a wooden dowel stick,
+            and his held up by two 3D-printed holders, one of which is black
+            instead of yellow. The holders are screwed into a poorly cut piece
+            of hardboard, with some text on it written in markers (used during
+            the assessment). Paperclips are used as brushes and are screwed in
+            and their angles are retained using masking tape. There is also
+            masking tape wrapped around the axle at two points.'
+       img={require('./dc-motor-2.jpg')} />
 
 This is a DC motor I built for EIR 221 at the University of Pretoria. We were
 limited to a R200 budget ($10) and had to build it during a one-week recess.
@@ -28,9 +33,10 @@ the rotor away from the magnets, this motor uses the Lorentz force, which is
 the force experienced by a copper wire near a magnet while current flows
 through the wire.
 
-![The windings get very close to the magnets. They follow a curved contour
-instead of a square/rectangular one, ensuring minimum distance even as the
-rotor rotates.](winding-distance.jpg)
+<Image alt='The windings get very close to the magnets. They follow a curved
+            contour instead of a square/rectangular one, ensuring minimum
+            distance even as the rotor rotates.'
+       img={require('./winding-distance.jpg')} />
 
 Because there are 100 windings, this force is multiplied by 100, which gives
 the rotor enough momentum from standstill to turn 180 degrees, allowing the
@@ -54,8 +60,9 @@ All 3D-printed parts were designed in Autodesk Fusion.
 
 ### First iteration
 
-![A very simple, solid rectangular piece with a hole for the axle and lips to
-prevent the windings from falling off.](cad-v1.png)
+<Image alt='A very simple, solid rectangular piece with a hole for the axle and
+            lips to prevent the windings from falling off.'
+       img={require('./cad-v1.png')} />
 
 The first iteration of the rotor was a failure, as there was only enough room
 for about 20-30 windings. This was not enough windings to provide enough
@@ -69,7 +76,8 @@ meant that the windings would only get close to the magnets in four positions.
 
 ### Second iteration
 
-![A much more complicated part, see below.](cad-v2.png)
+<Image alt='A much more complicated part, see below.'
+       img={require('./cad-v2.png')} />
 
 In the second iteration, in order to increase the rotational inertia, material
 was added to the outside and holes were added for nails, which also served to
@@ -85,7 +93,8 @@ batteries.
 
 ## Commutator
 
-![A zoomed-in view of the commutator.](commutator.jpg)
+<Image alt='A zoomed-in view of the commutator.'
+       img={require('./commutator.jpg')} />
 
 The commutator is just a few sanded-down pieces of magnet wire soldered to the
 magnet wire coming from the rotor.
@@ -98,7 +107,7 @@ and prevent the axle from moving laterally.
 
 ## Speed sensor
 
-![](speed-sensor.jpg)
+<Image img={require('./speed-sensor.jpg')} />
 
 The assignment required an additional commutator to act as a speed sensor. This
 commutator is made of two nails with some wire wrapped around them to connect
