@@ -4,6 +4,9 @@ title: Set up a binhost for another CPU
 description: Set up a Gentoo binary package repository with custom CFLAGS (e.g.
              -march=native) and a custom make.conf and Portage profile.
 ---
+
+import Image from '@theme/IdealImage'
+
 # Setting up a Gentoo Binary Package Repository with a Custom Portage Configuration
 
 After completing this guide, users will be able to build binary packages
@@ -13,9 +16,10 @@ system.
 Specifically, packages may be built with CFLAGS and USE flags tailored to the
 target's CPU, even if that makes them incompatible with the host's CPU.
 
-![./emerge-for-target.sh, triggering two emerge runs (one on the host for the
-binhost and one on the target), followed by a command that prints the binhost's
-CFLAGS](emerge-script-output.png)
+<Image alt='./emerge-for-target.sh, triggering two emerge runs (one on the host
+           for the binhost and one on the target), followed by a command that
+           prints the binhost&#39;s CFLAGS'
+       img={require('./emerge-script-output.png')} />
 
 ## Requirements
 
@@ -62,11 +66,11 @@ wget -- "$STAGE_ARCHIVE"
 tar --extract --preserve-permissions --file stage3-*.tar.xz --xattrs-include='*.*' --numeric-owner
 ```
 
-![root@host / # ls binhost
-bin   dev  home  lib64  mnt  proc  run
-stage3-amd64-nomultilib-systemd-20250608T165347Z.tar.xz  tmp  var
-boot  etc  lib   media  opt  root  sbin  sys
-usr](ls-from-binhost.png)
+<Image alt='root@host / # ls binhost
+            bin   dev  home  lib64  mnt  proc  run
+            stage3-amd64-nomultilib-systemd-20250608T165347Z.tar.xz  tmp  var
+            boot  etc  lib   media  opt  root  sbin  sys usr'
+       img={require('./ls-from-binhost.png')} />
 
 
 ### Hosting the binary package repository
@@ -83,9 +87,10 @@ PORT=$RANDOM
 python -m http.server --directory /binhost/var/cache/binpkgs/ $PORT
 ```
 
-![The above commands, with the following output:
-Serving HTTP on 0.0.0.0 port 25888 (http://0.0.0.0:25888/)
-...](http-server-from-binhost.png)
+<Image alt='The above commands, with the following output:
+            Serving HTTP on 0.0.0.0 port 25888 (http://0.0.0.0:25888/)
+            ...'
+       img={require('./http-server-from-binhost.png')} />
 
 :::tip[Alternatives to Python's HTTP server]
 The [official Gentoo wiki][wiki-setup-binhost] has a list of alternative ways
@@ -178,12 +183,14 @@ gcc -v -E -x c -march=native -c /dev/null -o /dev/null 2>&1 | grep /cc1 | grep m
 ```
 :::
 
-![root@host / # cd binhost/
-root@host /binhost # tar c etc/portage/ var/lib/portage/world* | sha256sum
-c88...  -](host-sha256sum.png)
-![target / # tar c etc/portage/ var/lib/portage/world* | sha256sum
-c88...  -](target-sha256sum.png)
-
+<Image alt='root@host / # cd binhost/
+            root@host /binhost # tar c etc/portage/ var/lib/portage/world* |
+            sha256sum
+            c88...  -'
+       img={require('./host-sha256sum.png')} />
+<Image alt='target / # tar c etc/portage/ var/lib/portage/world* | sha256sum
+            c88...  -'
+       img={require('./target-sha256sum.png')} />
 
 #### Adding the binhost to the target
 
