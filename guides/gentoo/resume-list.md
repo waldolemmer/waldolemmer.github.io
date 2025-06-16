@@ -1,9 +1,8 @@
 ---
 sidebar_position: 3
 title: Editing the emerge --resume database
-description: A guide on how to edit the emerge --resume database to manage
-             package merges in Gentoo, allowing users to back up their merge
-             progress (or cancel the last merge).
+description: Editing emerge's resume database in Gentoo Linux, for example to
+             back up your merge progress or cancel the last merge.
 ---
 # Editing the `emerge --resume` database (with a text editor)
 
