@@ -18,7 +18,7 @@ const DESCRIPTION = translate({
 function ShowcaseHeader() {
   return (
     <section className="margin-top--lg margin-bottom--lg text--center">
-      <Heading as="h1">{TITLE}</Heading>
+      <Heading as="h1">Waldo Lemmer</Heading>
       <p>{DESCRIPTION}</p>
     </section>
   );
