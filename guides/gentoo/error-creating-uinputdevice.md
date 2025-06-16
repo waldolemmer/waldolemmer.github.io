@@ -1,10 +1,7 @@
 ---
 description:  |
-    Solution for:
-    Error: creating UInputDevice from /dev/input/event
-    Caused by:
-        ENOENT: No such file or directory"
-
+    A solution for this error, which I encountered while setting up evremap on
+    Gentoo Linux.
 ---
 
 # Error: creating UInputDevice from /dev/input/event caused by ENOENT
