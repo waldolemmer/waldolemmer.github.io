@@ -9,7 +9,7 @@ import Heading from '@theme/Heading';
 import ShowcaseCards from './showcase/_components/ShowcaseCards';
 import ShowcaseFilters from './showcase/_components/ShowcaseFilters';
 
-const TITLE = translate({message: 'Waldo Lemmer'});
+const TITLE = translate({message: 'Waldo Lemmer\'s Projects and Guides'});
 const DESCRIPTION = translate({
   message: 'My projects and guides, covering software development, Linux and \
             system administration, electronics and more.',
