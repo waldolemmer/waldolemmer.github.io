@@ -1,6 +1,6 @@
 ---
-description: >
-    How data, reads and writes are distributed across drives with mixed sizes.
+description: How data, reads and writes are distributed across drives with
+             mixed sizes.
 image: '/img/zfs-social-card.png'
 ---
 
