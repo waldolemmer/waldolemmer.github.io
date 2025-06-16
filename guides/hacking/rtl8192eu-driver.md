@@ -2,6 +2,7 @@
 description: Most drivers either don't work with modern Linux kernels or don't
              support both monitor mode AND packet injection. But I've finally
              found one that works.
+image: '/img/rtl8192eu-social-card.png'
 ---
 # RTL8192EU: driver with monitor mode and packet injection support
 
