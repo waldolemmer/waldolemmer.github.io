@@ -48,6 +48,7 @@ export type TagType =
 // prettier-ignore
 const Projects: Project[] = [
   {
+    position: 0,
     title: 'DC motor',
     description: 'A low-budget DC motor powered by the Lorentz force',
     preview: require('./showcase/dc-motor.jpg'),
@@ -55,6 +56,7 @@ const Projects: Project[] = [
     tags: ['electronics', 'fdm'],
   },
   {
+    position: 0,
     title: 'Gentoo Linux',
     description: 'Guides for installing and configuring Gentoo Linux',
     preview: require('../../guides/gentoo/light-vps/fastfetch.png'),
@@ -62,6 +64,7 @@ const Projects: Project[] = [
     tags: ['guide'],
   },
   {
+    position: 1,
     title: 'Networks',
     description: 'Networking guides and tutorials',
     preview: require('../../guides/networks/show-hidden-huawei-router-features/screenshot.png'),
@@ -69,6 +72,7 @@ const Projects: Project[] = [
     tags: ['guide'],
   },
   {
+    position: 1,
     title: 'Volume and filesystem management',
     description: 'ZFS and other filesystem and volume management guides',
     preview: '/img/zfs-social-card.png',
@@ -78,6 +82,7 @@ const Projects: Project[] = [
 ];
 
 export type Project = {
+  position: number;
   title: string;
   description: string;
   preview: string;
@@ -133,8 +138,8 @@ export const Tags: {[type in TagType]: Tag} = {
 export const TagList = Object.keys(Tags) as TagType[];
 function sortProjects() {
   let result = Projects;
-  // Sort by site name
-  result = sortBy(result, (user) => user.title.toLowerCase());
+  result = sortBy(result, (project) => project.title.toLowerCase());
+  result = sortBy(result, (project) => project.position);
   return result;
 }
 
