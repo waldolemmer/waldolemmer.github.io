@@ -1,7 +1,8 @@
 ---
 sidebar_position: 4
 title: Chroot installation
-description: Install Gentoo to a directory on another OS.
+description: How to temporarily install Gentoo on any operating system without
+             replacing the OS, by installing it in a chroot directory.
 ---
 # Setting up a Gentoo chroot environment on any OS
 

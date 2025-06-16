@@ -1,7 +1,7 @@
 ---
 sidebar_position: 5
 description: >
-    Changing the source code of a Gentoo package – the right way.
+    Changing the source code of a package on Gentoo Linux – the right way.
 ---
 
 # How to modify source code on Gentoo

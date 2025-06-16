@@ -1,10 +1,10 @@
 ---
-description: >
-    How to fix the INACCESSIBLE_BOOT_DEVICE blue screen of death (BSOD) when
-    trying to boot off a Windows USB.
+title: INACCESSIBLE_BOOT_DEVICE when booting from USB
+description: How to fix the INACCESSIBLE_BOOT_DEVICE blue screen of death
+             (BSOD) when trying to boot off a Windows USB.
 ---
 
-# INACCESSIBLE\_BOOT\_DEVICE when booting from USB
+# [Solved] INACCESSIBLE\_BOOT\_DEVICE when booting from USB
 
 According to [this][1] thread, the USB 3.0 drivers aren't loaded at the stage
 of the boot process where Windows tries to access the boot partition.

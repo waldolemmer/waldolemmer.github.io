@@ -1,8 +1,10 @@
 ---
 sidebar_position: 2
 title: Set up a binhost for another CPU
-description: Set up a Gentoo binary package repository with custom CFLAGS (e.g.
-             -march=native) and a custom make.conf and Portage profile.
+description: Set up a Gentoo binary package repository for another system with
+             custom CFLAGS (e.g. -march=native) and a custom make.conf and
+             Portage profile. Compiler flags are customized for the other
+             device.
 ---
 
 import Image from '@theme/IdealImage'
