@@ -79,6 +79,22 @@ const Projects: Project[] = [
     website: '../../guides/volume-mgmt/zfs-drives-with-mixed-capacities/',
     tags: ['guide'],
   },
+  {
+    position: 2,
+    title: 'Hacking',
+    description: 'Pen testing knowledge base',
+    preview: '/img/rtl8192eu-social-card.png',
+    website: '../../guides/hacking/rtl8192eu-driver',
+    tags: ['guide'],
+  },
+  {
+    position: 2,
+    title: 'Windows',
+    description: 'Windows guides and tutorials',
+    preview: '/img/windows-social-card.png',
+    website: '../../guides/windows/inaccessible-boot-device',
+    tags: ['guide'],
+  },
 ];
 
 export type Project = {
