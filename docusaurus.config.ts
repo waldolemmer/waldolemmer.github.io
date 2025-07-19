@@ -55,6 +55,7 @@ const config: Config = {title: 'Waldo Lemmer',
                                             // upcoming Docusaurus v4
                         url: 'https://waldolemmer.github.io',
                         baseUrl: '/',
+                        trailingSlash: true,
 
                         // GitHub
                         organizationName: 'waldolemmer',
