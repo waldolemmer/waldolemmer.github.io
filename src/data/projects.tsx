@@ -81,6 +81,14 @@ const Projects: Project[] = [
   },
   {
     position: 2,
+    title: 'Local inference',
+    description: 'Measuring and optimising the performance of large language models running on local hardware',
+    preview: require('../../guides/local-inference/profiling-your-local-llm/social-card.png'),
+    website: '../../guides/local-inference/profiling-your-local-llm/',
+    tags: ['guide'],
+  },
+  {
+    position: 2,
     title: 'Hacking',
     description: 'Pen testing knowledge base',
     preview: '/img/rtl8192eu-social-card.png',
