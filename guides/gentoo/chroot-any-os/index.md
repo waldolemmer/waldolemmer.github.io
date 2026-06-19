@@ -6,10 +6,10 @@ description: How to temporarily install Gentoo on any operating system without
 ---
 # Setting up a Gentoo chroot environment on any OS
 
-<!-- Choices:
+{/* Choices:
 
      - Directory name
-     - Stage archive -->
+     - Stage archive */}
 
 ## Steps
 
