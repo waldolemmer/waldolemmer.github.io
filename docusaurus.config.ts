@@ -62,7 +62,6 @@ const config: Config = {title: 'Waldo Lemmer',
                         projectName: 'waldolemmer.github.io',
 
                         onBrokenLinks: 'throw',
-                        onBrokenMarkdownLinks: 'warn',
 
                         // Even if you don't use internationalization, you can
                         // use this field to set useful metadata like html
@@ -83,6 +82,9 @@ const config: Config = {title: 'Waldo Lemmer',
                                     routeBasePath: 'projects'}]],
 
                         presets: presets,
-                        themeConfig: themeConfig};
+                        themeConfig: themeConfig,
+                        markdown: {mermaid: true,
+                                   hooks: {onBrokenMarkdownLinks: 'warn'}},
+                        themes: ['@docusaurus/theme-mermaid']};
 
 export default config;
